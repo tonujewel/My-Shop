@@ -15,11 +15,12 @@ class SplashContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Spacer(),
+        const Spacer(),
         Text(
-          "TOKOTO",
+          "Global Medical Engineering",
+          textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: getProportionateScreenWidth(36),
+            fontSize: getProportionateScreenWidth(24),
             color: kPrimaryColor,
             fontWeight: FontWeight.bold,
           ),
@@ -28,7 +29,7 @@ class SplashContent extends StatelessWidget {
           text!,
           textAlign: TextAlign.center,
         ),
-        Spacer(flex: 2),
+        const Spacer(flex: 2),
         Image.asset(
           image!,
           height: getProportionateScreenHeight(265),
